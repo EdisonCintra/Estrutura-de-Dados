@@ -8,13 +8,13 @@ package TarefaListaSimples;
 /**
  * @author Davi
  */
-public class No {
+public class NoString {
 
-    int valor;
-    No prox = null;
+    String nome;
+    NoString prox = null;
 
-    public No(int valor) {
-        this.valor = valor;
+    public NoString(String nome) {
+        this.nome= nome;
     }
 
 }

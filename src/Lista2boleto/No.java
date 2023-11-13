@@ -1,4 +1,4 @@
-package ListaSimples;
+package Lista2boleto;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -10,11 +10,10 @@ package ListaSimples;
  */
 public class No {
 
-    int valor;
+    Boleto boleto;
     No prox = null;
 
-    public No(int valor) {
-        this.valor = valor;
+    public No(Boleto boleto) {this.boleto = boleto;
     }
 
 }
