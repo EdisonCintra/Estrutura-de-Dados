@@ -4,33 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2315f5-bbf1-4abb-bb9b-db727a580302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO II.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Aula1/Vetor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lista1/Contato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lista1/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lista1/controlaAgenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lista2boleto/Boleto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lista2boleto/ListaSimples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lista2boleto/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListaSimples/ListaSimples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListaSimples/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listacompras2/ListaSimples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listacompras2/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listanumeros2/ListaSimples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listanumeros2/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TarefaListaSimples/ListaSimplesString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TarefaListaSimples/NoString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tarefa_08_11/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tarefa_08_11/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula/Vetor.java" afterDir="false" />
+    <list default="true" id="1e2315f5-bbf1-4abb-bb9b-db727a580302" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/src/Lista_prioridade_cores/Lista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lista_prioridade_cores/No.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tarefa_08_11/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tarefa_08_11/Lista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +45,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ediso/IdeaProjects/POO II/src/Main.java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -81,7 +60,20 @@
       <recent name="TarefaListaSimples" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lista2boleto.ListaSimples">
+  <component name="RunManager">
+    <configuration name="Lista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tarefa_08_11.Lista" />
+      <module name="POO II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tarefa_08_11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lista2boleto.ListaSimples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lista2boleto.ListaSimples" />
       <module name="POO II" />
@@ -134,26 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lista1.Principal" />
-      <module name="POO II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lista1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lista" />
         <item itemvalue="Application.Lista2boleto.ListaSimples" />
         <item itemvalue="Application.Listacompras2.ListaSimples" />
         <item itemvalue="Application.ListaSimples" />
         <item itemvalue="Application.ListaSimplesString" />
-        <item itemvalue="Application.Principal" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +172,25 @@
       <workItem from="1699486491547" duration="7082000" />
       <workItem from="1699559565191" duration="8000" />
       <workItem from="1699576955988" duration="1419000" />
+      <workItem from="1699917850858" duration="379000" />
+      <workItem from="1700154804200" duration="15000" />
+      <workItem from="1700594363041" duration="7676000" />
+      <workItem from="1700604353119" duration="606000" />
+      <workItem from="1700605923657" duration="46000" />
+      <workItem from="1700605991434" duration="53000" />
+      <workItem from="1700675066641" duration="5246000" />
+      <workItem from="1700687201190" duration="7000" />
+      <workItem from="1700690629139" duration="2144000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1699918002066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699918002066</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,11 +201,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
