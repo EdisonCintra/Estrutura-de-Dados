@@ -115,13 +115,15 @@ public class Lista {
 
             System.out.println("Adicionando por posição");
 
-            lista.inserirPorPosicao(1, 0); //1
-            lista.inserirPorPosicao(2, 1);
-            lista.inserirPorPosicao(3, 2);
+            lista.inserirPorPosicao(1, 0);
+            lista.inserirPorPosicao(2, 0);
+            lista.inserirPorPosicao(3, 0);
+            lista.inserirPorPosicao(4,1);
+
 
             lista.imprimir();
 
-            lista.excluirPorPosicao(1);
+            lista.excluirPorPosicao(0);
             lista.imprimir();
 
 

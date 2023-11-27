@@ -71,10 +71,10 @@ public class Lista {
 
         Lista listaDePacientes = new Lista();
 
-        listaDePacientes.inserir(new No(1,'V'));//1 2
-        listaDePacientes.inserir(new No(3,'A'));
-        listaDePacientes.inserir(new No(4,'V'));
-        listaDePacientes.inserir(new No(5,'A'));
+        listaDePacientes.inserir(new No(1,'A'));//1 2
+        listaDePacientes.inserir(new No(3,'V'));
+        listaDePacientes.inserir(new No(4,'A'));
+        listaDePacientes.inserir(new No(5,'V'));
 
         listaDePacientes.imprimir();
     }
