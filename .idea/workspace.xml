@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2315f5-bbf1-4abb-bb9b-db727a580302" name="Changes" comment="Atualização">
-      <change afterPath="$PROJECT_DIR$/src/ArvoreBinaria/ArvoreBinaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArvoreBinaria/No.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.fleet/run.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fila_PNE_2/FilaAtendimentoMudancas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fila_PNE_2/No.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fila_PNE_2/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fila_PNE/FilaAtendimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila_PNE/FilaAtendimento.java" afterDir="false" />
     </list>
@@ -208,6 +208,11 @@
       <workItem from="1701713389296" duration="2376000" />
       <workItem from="1701716878336" duration="6300000" />
       <workItem from="1701798047710" duration="76000" />
+      <workItem from="1701824630146" duration="117000" />
+      <workItem from="1701886093704" duration="438000" />
+      <workItem from="1701886678154" duration="13000" />
+      <workItem from="1701886780060" duration="5541000" />
+      <workItem from="1701892795508" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />

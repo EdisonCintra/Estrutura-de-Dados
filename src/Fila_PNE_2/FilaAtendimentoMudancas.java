@@ -1,16 +1,21 @@
-package Fila_PNE;
-class FilaAtendimento {
+package Fila_PNE_2;
+
+
+class FilaAtendimentoMudancas {
 
     No frente;
     No fim;
     int tamanho;
     int atendimentosNormais;
 
-    public FilaAtendimento() {
+    int atendimentosPNE;
+
+    public FilaAtendimentoMudancas() {
         this.frente = null;
         this.fim = null;
         this.tamanho = 0;
         this.atendimentosNormais = 0;
+        this.atendimentosPNE = 0;
 
     }
 
@@ -46,22 +51,29 @@ class FilaAtendimento {
 
         atendimentosNormais++;
 
-        if (atendimentosNormais >= 4) {
-
+        if (atendimentosNormais >= 4 && frente != null) {
             Pessoa pessoaPNE = buscarProximaPNE();
 
             if (pessoaPNE != null) {
-                System.out.println("Atendendo: " + pessoaPNE.nome + " (PNE)");
+                System.out.println("Atendendo PNE após 3 atendimentos normais: " + pessoaPNE.nome + " (PNE)");
                 removerPNE(frente, pessoaPNE);
-
+                atendimentosNormais = 0;
             }
+        } else if (frente != null && frente.pessoa.necessidadeEspecial) {
+            Pessoa pessoaPNE = frente.pessoa;
+            frente = frente.next;
+            tamanho--;
+
+            //System.out.println("Atendendo: " + pessoaPNE.nome + " (PNE)");
             atendimentosNormais = 0;
 
+            return pessoaPNE;
         }
-
 
         return pessoaAtendida;
     }
+
+
 
     private void removerPNE(No inicio, Pessoa pessoa) {
         No atual = inicio;
@@ -76,7 +88,7 @@ class FilaAtendimento {
             if (anterior == null) {
                 frente = atual.next;
             } else {
-                anterior.next = atual.next; // 1 -2- 3
+                anterior.next = atual.next;
             }
             tamanho--;
         }
@@ -103,18 +115,15 @@ class FilaAtendimento {
     }
 
     public static void main(String[] args) {
-        FilaAtendimento fila = new FilaAtendimento();
+        FilaAtendimentoMudancas fila = new FilaAtendimentoMudancas();
 
-        fila.enqueue(new Pessoa("Pessoa1", false));
-        fila.enqueue(new Pessoa("Pessoa2", true));
+        fila.enqueue(new Pessoa("Pessoa1", true));
+        fila.enqueue(new Pessoa("Pessoa2", false));
         fila.enqueue(new Pessoa("Pessoa3", false));
         fila.enqueue(new Pessoa("Pessoa4", false));
         fila.enqueue(new Pessoa("Pessoa5", false));
-        fila.enqueue(new Pessoa("Pessoa6", false));
+        fila.enqueue(new Pessoa("Pessoa6", true));
         fila.enqueue(new Pessoa("Pessoa7", false));
-
-
-
 
 
 
