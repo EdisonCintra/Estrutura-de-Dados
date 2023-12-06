@@ -1,7 +1,6 @@
 package Fila_PNE;
 class FilaAtendimento {
 
-
     No frente;
     No fim;
     int tamanho;
@@ -12,7 +11,10 @@ class FilaAtendimento {
         this.fim = null;
         this.tamanho = 0;
         this.atendimentosNormais = 0;
+
     }
+
+
 
     public void enqueue(Pessoa pessoa) {
         No novoNo = new No(pessoa);
@@ -25,15 +27,8 @@ class FilaAtendimento {
 
         fim = novoNo;
         tamanho++;
-
-        if (!pessoa.necessidadeEspecial) {
-            atendimentosNormais++;
-            if (atendimentosNormais == 3) {
-                Pessoa pne = new Pessoa("PNE", true);
-                enqueue(pne);
-            }
-        }
     }
+
 
     public Pessoa dequeue() {
         if (isEmpty()) {
@@ -44,7 +39,60 @@ class FilaAtendimento {
         frente = frente.next;
         tamanho--;
 
+        if (pessoaAtendida.necessidadeEspecial) {
+            atendimentosNormais = 0;
+            return pessoaAtendida;
+        }
+
+        atendimentosNormais++;
+
+        if (atendimentosNormais >= 4) {
+
+
+            Pessoa pessoaPNE = buscarProximaPNE();
+
+            if (pessoaPNE != null) {
+                System.out.println("Atendendo: " + pessoaPNE.nome + " (PNE)");
+                removerPNE(frente, pessoaPNE);
+
+            }
+            atendimentosNormais = 0;
+
+        }
+
+
         return pessoaAtendida;
+    }
+
+    private void removerPNE(No inicio, Pessoa pessoa) {
+        No atual = inicio;
+        No anterior = null;
+
+        while (atual != null && atual.pessoa != pessoa) {
+            anterior = atual;
+            atual = atual.next;
+        }
+
+        if (atual != null) {
+            if (anterior == null) {
+                frente = atual.next;
+            } else {
+                anterior.next = atual.next;
+            }
+            tamanho--;
+        }
+    }
+
+    private Pessoa buscarProximaPNE() {
+        No atual = frente;
+
+        while (atual != null) {
+            if (atual.pessoa.necessidadeEspecial) {
+                return atual.pessoa;
+            }
+            atual = atual.next;
+        }
+        return null;
     }
 
     public boolean isEmpty() {
@@ -55,8 +103,6 @@ class FilaAtendimento {
         return tamanho;
     }
 
-
-
     public static void main(String[] args) {
         FilaAtendimento fila = new FilaAtendimento();
 
@@ -64,6 +110,13 @@ class FilaAtendimento {
         fila.enqueue(new Pessoa("Pessoa2", false));
         fila.enqueue(new Pessoa("Pessoa3", false));
         fila.enqueue(new Pessoa("Pessoa4", false));
+        fila.enqueue(new Pessoa("Pessoa5", true));
+        fila.enqueue(new Pessoa("Pessoa6", true));
+        fila.enqueue(new Pessoa("Pessoa7", false));
+
+
+
+
 
         while (!fila.isEmpty()) {
             Pessoa pessoaAtendida = fila.dequeue();
